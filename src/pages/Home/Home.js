@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import AddTask from '../AddTask/AddTask';
 import { toast } from 'react-toastify';
-import Tasks from '../Task/Tasks';
+import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
@@ -45,9 +45,9 @@ const Home = () => {
                     <div className='grid grid-cols-4 place-content-center w-[800px] border p-2   '>
                      <FontAwesomeIcon className='bg-yellow-500 text-white text-2xl rounded-full' icon={faCheck}> </FontAwesomeIcon>
                     <p className=''>{task.name}</p>
-                    <p className='bg-green-500 rounded-lg text-white h-7 w-20 text-center'>update</p>
+                   <Link to={`/update/${task._id}`}>  <button className='bg-green-500 rounded-lg text-white h-7 w-20 text-center'>update</button></Link>
                     <button onClick={() => handleTaskDelete(task._id)} className='bg-red-500 rounded-lg text-white h-7 w-20 text-center'>Delete</button>
-                    {/* <button onClick={() => handleUserDelete(user._id)} > X </button> */}
+                  
 
                  </div>
                     </div>
