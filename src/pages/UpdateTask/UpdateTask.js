@@ -37,7 +37,8 @@ const UpdateTask = () => {
     // <ToastContainer />
     }
     return (
-        <div>
+        <div className=' text-center py-20'>
+            <h1 className='font-bold  mb-3'> Update Your Task: </h1>
              <form onSubmit={handleUpdateTask}>
             {/* <input type='text' name='name' placeholder='Name' required></input> */}
            

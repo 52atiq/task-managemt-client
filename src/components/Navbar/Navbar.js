@@ -5,7 +5,7 @@ const Navbar = () => {
   const menuItems = <>
     <li> <Link to='/todo'>To-Do</Link> </li>
     <li> <Link to='/completedtask'>Completed Task </Link> </li>
-    <li> <Link to='/calender'>Calender </Link> </li>
+    <li> <Link to='/calendar'>Calendar </Link> </li>
   </>
     return (
         <div class="navbar bg-base-100">
