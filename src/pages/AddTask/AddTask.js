@@ -29,7 +29,7 @@ const AddTask = () => {
     }
     return (
         <div>
-            <form onSubmit={handleAddTask} className='text-center my-20 gap-5 '>
+            <form onSubmit={handleAddTask} className='text-center my-12 gap-5 '>
             <input type="text" placeholder="Type Task" required name='name' class="input input-bordered input-sm w-full max-w-xs" />
             <button type='submit' class="btn btn-sm px-5 h-2 ml-2"> Add Task</button>
         </form>

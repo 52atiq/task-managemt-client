@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import AddTask from '../AddTask/AddTask';
 import { toast } from 'react-toastify';
 import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
-const Home = () => {
+const ToDo = () => {
     const [tasks, setTasks] = useState([]);
 
     useEffect( () => {
@@ -35,10 +34,10 @@ const Home = () => {
   }
 
     return (
-        <div >
-            <AddTask></AddTask>
-          <div className='mb-20 '>
-            <h1 className='text-center font-bold mb-3'> All Added Task: </h1>
+        <div className='m-10' >
+        
+          <div className='mt-20 '>
+          <h1 className='text-center mb-3 font-bold text-xl'> All TO-DO List: </h1>
             {
                 tasks.map(task => 
                    
@@ -60,4 +59,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default ToDo;
