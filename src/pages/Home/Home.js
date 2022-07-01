@@ -9,7 +9,7 @@ const Home = () => {
     const [tasks, setTasks] = useState([]);
 
     useEffect( () => {
-        fetch('http://localhost:8000/task')
+        fetch('https://thawing-island-05654.herokuapp.com/task')
         .then(res => res.json())
         .then(data => setTasks(data));
     }, [])
@@ -18,7 +18,7 @@ const Home = () => {
     const proceed =window.confirm ('Are you sure you want to delete?');
     if(proceed){
         console.log('deleting task with id', id);
-        const url = `http://localhost:8000/task/${id}`;
+        const url = `https://thawing-island-05654.herokuapp.com/task/${id}`;
         fetch(url, {
             method: 'DELETE'
         })    

@@ -5,6 +5,7 @@ import {Routes, Route} from 'react-router-dom'
 import Home from './pages/Home/Home';
 import UpdateTask from './pages/UpdateTask/UpdateTask';
 import Calendar from './components/Calendar/Calendar';
+import Footer from './components/Footer/Footer';
 function App() {
   return (
     <div>
@@ -15,6 +16,7 @@ function App() {
         <Route path='/update/:id' element={<UpdateTask></UpdateTask>}></Route>
         <Route path='calendar' element={<Calendar></Calendar>}></Route>
       </Routes>
+      <Footer> </Footer>
       <ToastContainer />
     </div>
   );

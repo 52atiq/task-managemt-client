@@ -6,7 +6,7 @@ const UpdateTask = () => {
     const {id} = useParams();
     const [task, setTask] = useState({})
     useEffect( () => {
-        const url = `http://localhost:8000/task/${id}`
+        const url = `https://thawing-island-05654.herokuapp.com/task/${id}`
         fetch(url)
         .then(res => res.json())
         .then(data => setTask(data))
@@ -20,7 +20,7 @@ const UpdateTask = () => {
         const UpdatedTask = {name};
    
      //send data to the server
-     const url = `http://localhost:8000/task/${id}`
+     const url = `https://thawing-island-05654.herokuapp.com/task/${id}`
      fetch(url, {
         method:"PUT",
         headers:{'content-type':'application/json'},

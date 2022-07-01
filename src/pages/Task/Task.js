@@ -7,7 +7,7 @@
 //     const [tasks, setTasks] = useState([]);
 
 //     useEffect( () => {
-//         fetch('http://localhost:8000/task')
+//         fetch('https://thawing-island-05654.herokuapp.com/task')
 //         .then(res => res.json())
 //         .then(data => setTasks(data));
 //     }, [])

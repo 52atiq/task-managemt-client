@@ -12,7 +12,7 @@ const AddTask = () => {
         const task = {name};
    
      //send data to the server
-     fetch('http://localhost:8000/task', {
+     fetch('https://thawing-island-05654.herokuapp.com/task', {
         method:"POST",
         headers:{'content-type':'application/json'},
         body:JSON.stringify(task)
