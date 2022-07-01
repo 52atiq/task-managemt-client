@@ -45,7 +45,7 @@ const ToDo = () => {
                     <div className='grid grid-cols-4 place-content-center w-[800px] border p-2   '>
                      <FontAwesomeIcon className='bg-yellow-500 text-white text-2xl rounded-full' icon={faCheck}> </FontAwesomeIcon>
                     <p className=''>{task.name}</p>
-                   <Link to={`/update/${task._id}`}>  <button className='bg-green-500 rounded-lg text-white h-7 w-20 text-center'>update</button></Link>
+                   <Link to={`/update/${task._id}`}>  <button className='bg-green-500 rounded-lg text-white h-7 w-20 text-center'>Update</button></Link>
                     <button onClick={() => handleTaskDelete(task._id)} className='bg-red-500 rounded-lg text-white h-7 w-20 text-center'>Delete</button>
                   
 

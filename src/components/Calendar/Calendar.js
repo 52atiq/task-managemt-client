@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { DayPicker } from 'react-day-picker';
 import 'react-day-picker/dist/style.css';
 const Calendar = () => {
-    const [selected, setSelected] = useState('')
+    const [selected, setSelected] = useState(new Date())
     return (
         <div className='flex justify-center mt-20'>
             <DayPicker

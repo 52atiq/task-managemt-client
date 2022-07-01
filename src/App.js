@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import NotFound from './components/NotFound/NotFound';
 import ToDo from './pages/ToDo/ToDo';
 import CompletedTask from './pages/CompletedTask/CompletedTask';
+import Done from './pages/Done/Done';
 function App() {
   return (
     <div>
@@ -19,7 +20,8 @@ function App() {
         <Route path='/update/:id' element={<UpdateTask></UpdateTask>}></Route>
         <Route path='calendar' element={<Calendar></Calendar>}></Route>
         <Route path='todo' element={<ToDo></ToDo>}></Route>
-        <Route path='completedtask' element={<CompletedTask></CompletedTask>}></Route>
+        <Route path='completed' element={<CompletedTask></CompletedTask>}></Route>
+        <Route path='completed' element={<Done></Done>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer> </Footer>
